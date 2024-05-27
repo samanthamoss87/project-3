@@ -439,3 +439,73 @@ def asset_tracking():
               "discuss your requirements -\n"
               "08000 82 82 00")
         print("==================================================\n")
+
+
+def vehicle_tracking():
+    vehicles = {
+        1: "Car",
+        2: "Van",
+        3: "Truck",
+        4: "Motorcycle",
+        5: "Specialist Vehicle",
+        6: "Plant & Machinery",
+        7: "Other"
+    }
+    print("\n")
+    for k, v in vehicles.items():
+        print(f"{k}. {v}")
+    vehicle_choice = int(input("Enter your choice: "))
+
+    print("\nDo you require any of the following features?")
+    feature = {
+        1: {
+            "label": "Driver ID",
+            "result": (
+                "We have a number of options including \nDart 3, G150 Global "
+                "and G70. \nPlease call a member of our team \nto  "
+                "discuss your requirements - 08000 82 82 00"
+            )
+        },
+        2: {
+            "label": "Fuel Monitoring (CANBus)",
+            "result": (
+                "Please call us to discuss your requirements - 08000 82 82 00"
+            )
+        },
+        3: {
+            "label": "PTO Monitoring",
+            "result": (
+                "We have a number of options including \nDart 3, G70, G150 "
+                "Global and Hawk. \nPlease call a member of our team to "
+                "\ndiscuss your requirements - 08000 82 82 00"
+            )
+        },
+        4: {
+            "label": "Video Integration",
+            "result": (
+                "The best solution is our AD Lite S - \nPlease call a member "
+                "of the team to discuss \nyour requirements further on "
+                "08000 82 82 00"
+            )
+        },
+        5: {
+            "label": "Multiple options",
+            "result": (
+                "Please call us to discuss your requirements - 08000 82 82 00"
+            )
+        },
+        6: {
+            "label": "None of the above",
+            "result": (
+                "Our most cost effective solution is the \nDart 3, please"
+                " call a member of our team to \ndiscuss your requirements "
+                "further 08000 82 82 00"
+            )
+        }
+    }
+    for k, v in feature.items():
+        print(f"{k}. {v['label']}")
+    feature_choice = int(input("Enter your choice: "))
+    print("\n================================================")
+    print(f"{feature[feature_choice]['result']}")
+    print("==================================================\n")
