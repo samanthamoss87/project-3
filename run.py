@@ -577,3 +577,108 @@ def stolen_vehicle_or_asset_tracking():
     print(f"{feature[feature_choice]['result']}")
     print("==================================================\n")
     
+
+def video_telematics():
+    video_dict = {
+        1: {
+            "label": "Dashcam",
+            "result": {
+                "yes": (
+                    "We would recommend AD Lite S - 4G + 1CH \nMonitor Kit. "
+                    "Please call a member \nof our team on 08000 82 82 00"
+                ),
+                "no": (
+                    "We would recommend AD Lite S - 4G. \nPlease call a member "
+                    "of our \nteam on 08000 82 82 00"
+                )
+            }
+        },
+        2: {
+            "label": "AI DashCam (ADAS + DMS)",
+            "result": {
+                "yes": (
+                    "We would recommend AD Plus 2.0 - 4G + 1CH \nMonitor Kit. "
+                    "Please call a member \nof our team on 08000 82 82 00"
+                ),
+                "no": (
+                    "We would recommend AD Plus 2.0 - 4G. \nPlease call a member "
+                    "of our \nteam on 08000 82 82 00"
+                )
+            }
+        },
+        3: {
+            "label": "Mobile DVR",
+            "result": {
+                "yes": (
+                    "We would recommend X1 - 5CH 4G DVR + 1CH \nMonitor Kit. "
+                    "Please call a member \nof our team on 08000 82 82 00"
+                ),
+                "no": (
+                    "We would recommend X1 - 5CH 4G DVR. \nPlease call a member "
+                    "of our \nteam on 08000 82 82 00"
+                )
+            }
+        },
+        4: {
+            "label": "AI Enabled DVR",
+            "result": {
+                "yes": (
+                    "We would recommend X1 - 5CH 4G DVR + DMS + 1CH \nMonitor "
+                    "Kit. Please call a member \nof our team on 08000 82 82 00"
+                ),
+                "no": (
+                    "We would recommend X1 - 5CH 4G DVR + DMS. \nPlease call a "
+                    "member of our \nteam on 08000 82 82 00"
+                )
+            }
+        },
+        5: {
+            "label": "DVS 2024",
+            "result": {
+                "yes": (
+                    "We would recommend MOS camera+side \nradar sensor + 1CH "
+                    "Monitor Kit. \nPlease call a member of our team \non 08000 "
+                    "82 82 00"
+                ),
+                "no": (
+                    "We would recommend MOS camera+side \nradar sensor. Please "
+                    "call a member \nof our team on 08000 82 82 00"
+                )
+            }
+        }
+    }
+
+    asset_type = {
+        1: "Car",
+        2: "Van",
+        3: "Truck",
+        4: "Motorcycle",
+        5: "Specialist Vehicle",
+        6: "Plant & Machinery",
+        7: "Other"
+    }
+
+    print("\n")
+    for k, v in video_dict.items():
+        print(f"{k}. {v['label']}")
+    video_choice = int(input("Enter your choice: "))
+
+    print("\n")
+    for k, v in asset_type.items():
+        print(f"{k}. {v}")
+    asset_choice = int(input("Enter your choice: "))
+
+    print("\nDo you require an in-vehicle monitor?")
+    options = {
+        1: "yes",
+        2: "no"
+    }
+    for k, v in options.items():
+        print(f"{k}. {v.title()}")
+    option_choice = int(input("Enter your choice: "))
+
+    print("\n================================================")
+    print(f"{video_dict[video_choice]['result'][options[option_choice]]}")
+    print("==================================================\n")
+
+    print("Thank you for using our service")
