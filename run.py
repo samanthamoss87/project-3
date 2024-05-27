@@ -682,3 +682,28 @@ def video_telematics():
     print("==================================================\n")
 
     print("Thank you for using our service")
+
+
+def select_type():
+    service_types = {
+        1: "Asset Tracking",
+        2: "Vehicle Tracking",
+        3: "Stolen Vehicle & Asset Tracking",
+        4: "Video Telematics"
+    }
+    print("\n")
+    for k, v in service_types.items():
+        print(f"{k}. {v}")
+
+    choice = int(input("Select your choice: "))
+    if choice == 1:
+        asset_tracking()
+    elif choice == 2:
+        vehicle_tracking()
+    elif choice == 3:
+        stolen_vehicle_or_asset_tracking()
+    elif choice == 4:
+        video_telematics()
+    else:
+        print("Thank you for using our service")
+        
