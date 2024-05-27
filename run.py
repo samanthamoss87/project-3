@@ -299,3 +299,143 @@ def select_asset():
     print("\n================================================")
     print(f"{vehicle_asset_types[asset_type]['result'][reason_input]}")
     print("==================================================\n")
+
+
+def asset_tracking():
+    assets = {
+        1: "Agricultural Tracking",
+        2: "Bin / Container Tracking",
+        3: "Pallet & Cage Tracking",
+        4: "Plant & Equipment Tracking",
+        5: "Trailer Tracking / Transport",
+        6: "Trains / Rail",
+        7: "Utilities: Gas, Power, Water",
+        8: "Other"
+    }
+
+    print("\n")
+    for k, v in assets.items():
+        print(f"{k}. {v}")
+
+    asset_tracking_choice = int(input("Please select your choice: "))
+    option_dict = {
+        1: "Powered",
+        2: "Unpowered",
+        3: "Unsure"
+    }
+    print("\nIs the asset you are looking to monitor powered or unpowered?")
+    for k, v in option_dict.items():
+        print(f"{k}. {v}")
+
+    power_choice = int(input("Enter your choice: "))
+    print("\nDo you use the asset for:")
+
+    powered_place_option = {
+        1: {
+            "label": "Indoors",
+            "result": ("Please call us to\n"
+                       "discuss your requirements -\n"
+                       "08000 82 82 00")
+        },
+        2: {
+            "label": "Outdoors",
+            "result": ("We have a number\n"
+                       "of options including Dart 3,\n"
+                       "G62 (LORAWAN only), G70,\n"
+                       "G120. Please call a\n"
+                       "member of our team to\n"
+                       "discuss your requirements -\n"
+                       "08000 82 82 00")
+        },
+        3: {
+            "label": "Both Indoor & Outdoor",
+            "result": ("We have a number\n"
+                       "of options including Dart 3,\n"
+                       "G62 (LORAWAN only), G70,\n"
+                       "G120. Please call a\n"
+                       "member of our team to\n"
+                       "discuss your requirements -\n"
+                       "08000 82 82 00")
+        },
+        4: {
+            "label": "Fixed Location",
+            "result": ("Please call us to\n"
+                       "discuss your requirements -\n"
+                       "08000 82 82 00")
+        },
+        5: {
+            "label": "Other",
+            "result": ("Please call us to\n"
+                       "discuss your requirements -\n"
+                       "08000 82 82 00")
+        }
+    }
+
+    unpowered_place_option = {
+        1: {
+            "label": "Indoors",
+            "result": ("Barra Core and any\n"
+                       "of the Edge devices\n"
+                       "such as Barra Edge,\n"
+                       "Yabby Edge, Oyster\n"
+                       "Edge - Please call a\n"
+                       "member of our team to\n"
+                       "discuss your requirements further -\n"
+                       "08000 82 82 00")
+        },
+        2: {
+            "label": "Outdoors",
+            "result": ("We have a number\n"
+                       "of options, Barra GPS,\n"
+                       "Yabby 3, Oyster 3,\n"
+                       "Oyster 3 Bluetooth,\n"
+                       "Remora 3, Oyster 3\n"
+                       "Global & Remora 3\n"
+                       "Global. Please call a\n"
+                       "member of our team to\n"
+                       "discuss your requirements -\n"
+                       "08000 82 82 00")
+        },
+        3: {
+            "label": "Both Indoor & Outdoor",
+            "result": ("Any of the Edge\n"
+                       "devices such as Barra\n"
+                       "Edge, Yabby Edge,\n"
+                       "Oyster Edge - Please\n"
+                       "call a member of\n"
+                       "our team to discuss\n"
+                       "your requirements further -\n"
+                       "08000 82 82 00")
+        },
+        4: {
+            "label": "Fixed Location",
+            "result": ("Please call us to\n"
+                       "discuss your requirements -\n"
+                       "08000 82 82 00")
+        },
+        5: {
+            "label": "Other",
+            "result": ("Please call us to\n"
+                       "discuss your requirements -\n"
+                       "08000 82 82 00")
+        }
+    }
+
+    for k, v in powered_place_option.items():
+        print(f"{k}. {v['label']}")
+
+    use_asset_choice = int(input("Enter your choice: "))
+    if power_choice == 1:
+        print("\n================================================")
+        print(f"{powered_place_option[use_asset_choice]['result']}")
+        print("==================================================\n")
+    elif power_choice == 2:
+        print("\n================================================")
+        print(f"{unpowered_place_option[use_asset_choice]['result']}")
+        print("==================================================\n")
+    else:
+        print("\n================================================")
+        print("Please call us to\n"
+              "discuss your requirements -\n"
+              "08000 82 82 00")
+        print("==================================================\n")
