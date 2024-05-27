@@ -707,3 +707,19 @@ def select_type():
     else:
         print("Thank you for using our service")
         
+
+if __name__ == "__main__":
+
+    running = True
+    while running:
+        print("Do you know which type of telematics solution you require?")
+        print("1. Yes\n2. No")
+        a = input("Enter your choice: ")
+        if a == "1":
+            select_type()
+            running = False
+        elif a == "2":
+            select_asset()
+            running = False
+        else:
+            print("Invalid input. Try again.")
