@@ -509,3 +509,71 @@ def vehicle_tracking():
     print("\n================================================")
     print(f"{feature[feature_choice]['result']}")
     print("==================================================\n")
+
+
+def stolen_vehicle_or_asset_tracking():
+    asset_dict = {
+        1: "Car",
+        2: "Van",
+        3: "Truck",
+        4: "Motorcycle",
+        5: "Specialist Vehicle",
+        6: "Plant & Machinery",
+        7: "Other",
+    }
+
+    feature = {
+        1: {
+            "label": "Yes",
+            "result": (
+                "We would recommend our SA S7 Tracking solution, \nplease "
+                "contact a member of our team to discuss \nyour requirements "
+                "further on 08000 82 82 00"
+            )
+        },
+        2: {
+            "label": "No",
+            "result": (
+                "We would recommend our Barra Egde device, \nplease contact "
+                "a member of our team to \ndiscuss this further on "
+                "08000 82 82 00"
+            )
+        },
+        3: {
+            "label": "Yes - Must be a CAT 5+ system",
+            "result": (
+                "We would recommend our SA S5+ Tracking solution, \nplease "
+                "contact a member of our team to \ndiscuss your requirements "
+                "further on 08000 82 82 00"
+            )
+        },
+        4: {
+            "label": "Yes - Must be a CAT 7 system",
+            "result": (
+                "We would recommend our SA S7 Tracking solution, \nplease "
+                "contact a member of our team to \ndiscuss your requirements "
+                "further on 08000 82 82 00"
+            )
+        },
+        5: {
+            "label": "Unsure",
+            "result": (
+                "Please call us to discuss your \nrequirements - 08000 "
+                "82 82 00"
+            )
+        }
+    }
+
+    print("\n")
+    for k, v in asset_dict.items():
+        print(f"{k}. {v}")
+    asset_choice = int(input("Enter your choice: "))
+    print("\nDo you require any of the following features?")
+
+    for k, v in feature.items():
+        print(f"{k}. {v['label']}")
+    feature_choice = int(input("Enter your choice: "))
+    print("\n================================================")
+    print(f"{feature[feature_choice]['result']}")
+    print("==================================================\n")
+    
