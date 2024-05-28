@@ -96,3 +96,13 @@ if __name__ == "__main__":
     - `stolen_vehicle_or_asset_tracking()`
     - `video_telematics()`
 3. Recommendations: Each function provides tailored recommendations based on user inputs, ensuring they receive the most suitable telematics solution.
+
+
+#### Data Usage
+- Asset Types: The script categorizes various assets and vehicles, each associated with specific tracking solutions.
+
+- Reasons for Tracking: Different reasons for tracking (e.g., insurance, theft protection) influence the recommendation.
+- Features: Specific features required by the user (e.g., Driver ID, Fuel Monitoring) further refine the recommendations.
+- Contact Information: Recommendations often include a prompt to contact a team member for further discussion and implementation of the solution.
+
+By following the structured input prompts, the user receives personalized and relevant telematics solution recommendations, ensuring they meet their tracking and monitoring needs efficiently.
