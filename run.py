@@ -10,7 +10,7 @@ def select_asset():
                 3: ("We would recommend our Barra Egde device, \nplease "
                     "contact a member of our team \nto discuss this further "
                     "on 08000 82 82 00"),
-                4: ("We would recommend a Video-bvased \nsolution such as "
+                4: ("We would recommend a Video-based \nsolution such as "
                     "the AD Lite S, \nplease contact a member of our \nteam "
                     "to discuss this further on 08000 82 82 00"),
                 5: ("Please call us to discuss your \nrequirements - "
@@ -30,7 +30,7 @@ def select_asset():
                 3: ("We would recommend our Barra Egde device, \nplease "
                     "contact a member of our team \nto discuss this further "
                     "on 08000 82 82 00"),
-                4: ("We would recommend a Video-bvased \nsolution such as "
+                4: ("We would recommend a Video-based \nsolution such as "
                     "the AD Lite S, \nplease contact a member of our \nteam "
                     "to discuss this further \non 08000 82 82 00"),
                 5: ("Please call us to discuss your \nrequirements - "
@@ -50,7 +50,7 @@ def select_asset():
                 3: ("We would recommend our Barra Egde \ndevice, please "
                     "contact a member \nof our team to discuss this \nfurther "
                     "on 08000 82 82 00"),
-                4: ("We would recommend a Video-bvased \nsolution such as "
+                4: ("We would recommend a Video-based \nsolution such as "
                     "the X1 5CH 4G \nDVR, please contact a member \nof our "
                     "team to discuss this \nfurther on 08000 82 82 00"),
                 5: ("Please call us to discuss your \nrequirements - "
@@ -110,7 +110,7 @@ def select_asset():
                 3: ("We would recommend our Dart3 Egde \ndevice, please "
                     "contact a member \nof our team to discuss this \nfurther "
                     "on 08000 82 82 00"),
-                4: ("We would recommend a Video-bvased \nsolution such as "
+                4: ("We would recommend a Video-based \nsolution such as "
                     "the AD Lite S, \nplease contact a member of our \nteam "
                     "to discuss this further \non 08000 82 82 00"),
                 5: ("Please call us to discuss your \nrequirements - "
@@ -130,7 +130,7 @@ def select_asset():
                 3: ("We would recommend our Hawk \ndevice, please contact a "
                     "member \nof our team to discuss this \nfurther on "
                     "08000 82 82 00"),
-                4: ("We would recommend a Video-bvased \nsolution such as "
+                4: ("We would recommend a Video-based \nsolution such as "
                     "the AD Lite S, \nplease contact a member of our \nteam "
                     "to discuss this further \non 08000 82 82 00"),
                 5: ("Please call us to discuss your \nrequirements - "
@@ -183,13 +183,13 @@ def select_asset():
             "result": {
                 1: ("Direct to Question regarding S5+ \nor S7 and display the "
                     "relevant result"),
-                2: ("We would recommend a Video-bvased \nsolution such as "
+                2: ("We would recommend a Video-based \nsolution such as "
                     "the AD Lite S + \nBarra Edge, please contact a \nmember "
                     "of our team to discuss \nthis further on 08000"),
-                3: ("We would recommend a Video-bvased \nsolution such as "
+                3: ("We would recommend a Video-based \nsolution such as "
                     "the AD Lite S, \nplease contact a member of our \nteam "
                     "to discuss this further \non 08000 82 82 00"),
-                4: ("We would recommend a Video-bvased \nsolution such as "
+                4: ("We would recommend a Video-based \nsolution such as "
                     "the AD Lite S, \nplease contact a member of our \nteam "
                     "to discuss this further \non 08000 82 82 00"),
                 5: ("Please call us to discuss your \nrequirements - "
@@ -223,13 +223,13 @@ def select_asset():
             "result": {
                 1: ("Please call us to discuss your \nrequirements - "
                     "08000 82 82 00"),
-                2: ("We would recommend a Video-bvased \nsolution such as "
+                2: ("We would recommend a Video-based \nsolution such as "
                     "the X7 Pro, \nplease contact a member of our \nteam to "
                     "discuss this further \non 08000 82 82 00"),
                 3: ("We would recommend our Hawk device, \nplease contact a "
                     "member of our \nteam to discuss this further \non 08000 "
                     "82 82 00"),
-                4: ("We would recommend a Video-bvased \nsolution such as "
+                4: ("We would recommend a Video-based \nsolution such as "
                     "the X7 Pro, \nplease contact a member of our \nteam to "
                     "discuss this further \non 08000 82 82 00"),
                 5: ("Please call us to discuss your \nrequirements - "
@@ -249,7 +249,7 @@ def select_asset():
                 3: ("We would recommend our Barra Egde \ndevice, please "
                     "contact a member \nof our team to discuss this \nfurther "
                     "on 08000 82 82 00"),
-                4: ("We would recommend a Video-bvased \nsolution such as "
+                4: ("We would recommend a Video-based \nsolution such as "
                     "the AD Lite S, \nplease contact a member of our \nteam "
                     "to discuss this further \non 08000 82 82 00"),
                 5: ("Please call us to discuss your \nrequirements - "
