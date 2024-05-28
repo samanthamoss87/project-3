@@ -67,3 +67,20 @@ if __name__ == "__main__":
         else:
             print("Invalid input. Try again.")
 ```
+
+#### Detailed Steps
+1. **Check if Script is Running as Main Program:**
+    - if `__name__ == "__main__":` ensures that the code block is executed only if the script is run directly, not if it is imported as a module in another script.
+2. **Initialize Running State:**
+    - `running = True` sets up a flag to keep the loop running until the user makes a valid choice.
+3. **Main Loop:**
+    - `while running:` starts an indefinite loop that will continue until running is set to False.
+4. **User Prompt:**
+    - The script prints: "Do you know which type of telematics solution you require?" and provides two options:
+        - `1. Yes`
+        - `2. No`
+    - `a = input("Enter your choice: ")` captures the user's input.
+5. **User Input Handling:**
+    - If the user inputs `1`, the script calls `select_type()`, which allows the user to choose the specific type of service they need. After calling the function, `running` is set to `False`, exiting the loop.
+    - If the user inputs `2`, the script calls `select_asset()`, which guides the user through selecting a vehicle or asset type and the reason for needing a tracking solution. After calling the function, `running` is set to `False`, exiting the loop.
+    - If the user inputs anything else, the script prints "Invalid input. Try again." and the loop continues, prompting the user again.
