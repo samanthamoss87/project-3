@@ -84,3 +84,15 @@ if __name__ == "__main__":
     - If the user inputs `1`, the script calls `select_type()`, which allows the user to choose the specific type of service they need. After calling the function, `running` is set to `False`, exiting the loop.
     - If the user inputs `2`, the script calls `select_asset()`, which guides the user through selecting a vehicle or asset type and the reason for needing a tracking solution. After calling the function, `running` is set to `False`, exiting the loop.
     - If the user inputs anything else, the script prints "Invalid input. Try again." and the loop continues, prompting the user again.
+
+
+#### User Interaction Flow
+1. Initial Prompt: The script asks the user if they know the type of telematics solution they require.
+    - Option 1: If the user selects "Yes," the script proceeds to `select_type()` where they choose the specific type of service.
+    - Option 2: If the user selects "No," the script calls `select_asset()` to guide them through the selection process based on asset type and tracking reason.
+2. Service Selection: Depending on the user's selection in `select_type()`, the script will call one of the following functions:
+    - `asset_tracking()`
+    - `vehicle_tracking()`
+    - `stolen_vehicle_or_asset_tracking()`
+    - `video_telematics()`
+3. Recommendations: Each function provides tailored recommendations based on user inputs, ensuring they receive the most suitable telematics solution.
