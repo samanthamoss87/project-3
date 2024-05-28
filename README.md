@@ -1,31 +1,4 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Vision Telematics
+The purpose of this Python console application, is to allow potential customers who have an interest in telematics, to answer a few simple questions in order to determine the best telematics product/solution to meet their needs. This directly relates to the Project 1 & 2 website (RS Vision Consulting) and will plan to build upon further in project 4 and 5 where we intend to build a complete "Telematics solution wizard" with a front and backend service. This will effectively allow potential customer to register their interest, navigate through some interactive questions / options and present product information/comparisons". This will be designed to take customers through a typical fact finding process which would normally be undertaken by a sales person in an automated way. We will also look to build a quote and potentially allow the customer to order online where currently this is not possible.
 
-Welcome samantha moss,
-
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
-
-## Reminders
-
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+[Live version of the program](https://project03-66119f33b52f.herokuapp.com/)
