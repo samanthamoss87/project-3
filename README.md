@@ -42,3 +42,28 @@ The purpose of this Python console application, is to allow potential customers 
 - **Purpose:** Allows users to choose the type of telematics service they require.
 - **Input:** User selects the service type (Asset Tracking, Vehicle Tracking, Stolen Vehicle & Asset Tracking, Video Telematics).
 - **Output:** Calls the appropriate function based on user selection.
+
+### Main Execution Loop
+
+The main execution loop is the entry point of the script. It repeatedly prompts the user to determine whether they know the type of telematics solution they require. Based on the user's input, it directs them to the appropriate function to gather more information or make a recommendation.
+<div>
+    <img src="assets/entry.jpg" />
+</div>
+
+### Code Explanation
+```python
+if __name__ == "__main__":
+    running = True
+    while running:
+        print("Do you know which type of telematics solution you require?")
+        print("1. Yes\n2. No")
+        a = input("Enter your choice: ")
+        if a == "1":
+            select_type()
+            running = False
+        elif a == "2":
+            select_asset()
+            running = False
+        else:
+            print("Invalid input. Try again.")
+```
