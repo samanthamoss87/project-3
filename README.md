@@ -116,3 +116,16 @@ By following the structured input prompts, the user receives personalized and re
 #### Bugs
 There are few bugs while developing the program. There were some misplet words which is fixed. Also there were some functional issues becasue i've used python dictionay to store and structure the data. After all handled it well. 
 There are no bugs are found in the deployed code.
+
+#### Deployment
+This poject was deployed using the Heroku Platform
+- Fork or clone the template repository
+- Create a new app on the heroku
+- Setup the buildpacks for `python` and `NodeJS`
+- Connect github account to the app
+- Select Repository 
+- Click on Deploy
+
+#### Credits
+- Code institute template
+- Online resources
