@@ -106,3 +106,13 @@ if __name__ == "__main__":
 - Contact Information: Recommendations often include a prompt to contact a team member for further discussion and implementation of the solution.
 
 By following the structured input prompts, the user receives personalized and relevant telematics solution recommendations, ensuring they meet their tracking and monitoring needs efficiently.
+
+
+#### Validator Testing
+- PEP8 linting test from [CI Python Linter](https://pep8ci.herokuapp.com/)
+- Manually tested each function
+- No Errors Found
+
+#### Bugs
+There are few bugs while developing the program. There were some misplet words which is fixed. Also there were some functional issues becasue i've used python dictionay to store and structure the data. After all handled it well. 
+There are no bugs are found in the deployed code.
