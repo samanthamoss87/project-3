@@ -1,3 +1,4 @@
+
 def select_asset():
     vehicle_asset_types = {
         1: {
@@ -295,7 +296,6 @@ def select_asset():
         input("\nWhat is the reason you are looking for a tracking solution?\n"
               "Select a number: ")
     )
-
     feature = {
         1: {
             "label": "Yes",
@@ -490,7 +490,7 @@ def asset_tracking():
               "08000 82 82 00")
         print("==================================================\n")
 
-
+# Vehicle Tracking
 def vehicle_tracking():
     vehicles = {
         1: "Car",
@@ -512,8 +512,8 @@ def vehicle_tracking():
             "label": "Driver ID",
             "result": (
                 "We have a number of options including \nDart 3, G150 Global "
-                "and G70. \nPlease call a member of our team \nto  "
-                "discuss your requirements - 08000 82 82 00"
+                "and G70. \nPlease call a member of our team \nto discuss "
+                "your requirements - 08000 82 82 00"
             )
         },
         2: {
@@ -547,8 +547,8 @@ def vehicle_tracking():
         6: {
             "label": "None of the above",
             "result": (
-                "Our most cost effective solution is the \nDart 3, please"
-                " call a member of our team to \ndiscuss your requirements "
+                "Our most cost effective solution is the \nDart 3, please "
+                "call a member of our team to \ndiscuss your requirements "
                 "further 08000 82 82 00"
             )
         }
@@ -626,7 +626,7 @@ def stolen_vehicle_or_asset_tracking():
     print("\n================================================")
     print(f"{feature[feature_choice]['result']}")
     print("==================================================\n")
-    
+
 
 def video_telematics():
     video_dict = {
@@ -638,8 +638,8 @@ def video_telematics():
                     "Please call a member \nof our team on 08000 82 82 00"
                 ),
                 "no": (
-                    "We would recommend AD Lite S - 4G. \nPlease call a member "
-                    "of our \nteam on 08000 82 82 00"
+                    "We would recommend AD Lite S - 4G. \nPlease call a "
+                    "member of our \nteam on 08000 82 82 00"
                 )
             }
         },
@@ -651,8 +651,8 @@ def video_telematics():
                     "Please call a member \nof our team on 08000 82 82 00"
                 ),
                 "no": (
-                    "We would recommend AD Plus 2.0 - 4G. \nPlease call a member "
-                    "of our \nteam on 08000 82 82 00"
+                    "We would recommend AD Plus 2.0 - 4G. \nPlease call a "
+                    "member of our \nteam on 08000 82 82 00"
                 )
             }
         },
@@ -664,8 +664,8 @@ def video_telematics():
                     "Please call a member \nof our team on 08000 82 82 00"
                 ),
                 "no": (
-                    "We would recommend X1 - 5CH 4G DVR. \nPlease call a member "
-                    "of our \nteam on 08000 82 82 00"
+                    "We would recommend X1 - 5CH 4G DVR. \nPlease call a "
+                    "member of our \nteam on 08000 82 82 00"
                 )
             }
         },
@@ -677,8 +677,8 @@ def video_telematics():
                     "Kit. Please call a member \nof our team on 08000 82 82 00"
                 ),
                 "no": (
-                    "We would recommend X1 - 5CH 4G DVR + DMS. \nPlease call a "
-                    "member of our \nteam on 08000 82 82 00"
+                    "We would recommend X1 - 5CH 4G DVR + DMS. \nPlease call "
+                    "a member of our \nteam on 08000 82 82 00"
                 )
             }
         },
@@ -687,12 +687,12 @@ def video_telematics():
             "result": {
                 "yes": (
                     "We would recommend MOS camera+side \nradar sensor + 1CH "
-                    "Monitor Kit. \nPlease call a member of our team \non 08000 "
-                    "82 82 00"
+                    "Monitor Kit. \nPlease call a member of our team \non  "
+                    "08000 82 82 00"
                 ),
                 "no": (
-                    "We would recommend MOS camera+side \nradar sensor. Please "
-                    "call a member \nof our team on 08000 82 82 00"
+                    "We would recommend MOS camera+side \nradar sensor. "
+                    "Please call a member \nof our team on 08000 82 82 00"
                 )
             }
         }
@@ -733,7 +733,7 @@ def video_telematics():
 
     print("Thank you for using our service")
 
-
+# Service Type
 def select_type():
     service_types = {
         1: "Asset Tracking",
@@ -756,10 +756,10 @@ def select_type():
         video_telematics()
     else:
         print("Thank you for using our service")
-        
+
+
 
 if __name__ == "__main__":
-
     running = True
     while running:
         print("Do you know which type of telematics solution you require?")
